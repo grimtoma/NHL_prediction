@@ -15,4 +15,3 @@ data = Data(x=x, edge_index=edge_index.t().contiguous()).to(device)
 for i in range(10**5):
     result = data.x * torch.tensor([[5],[1],[2]]).to(device)
     #print(data.x.shape)
-print(result)
